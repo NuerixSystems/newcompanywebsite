@@ -736,6 +736,12 @@ header
     display: flex !important;
   }
 }
+@media (min-width: 992px) {
+  .nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
 
 /* 
 ---------------------------------------------
@@ -899,7 +905,7 @@ Banner Style
 }
 
 .main-banner .left-content h2 {
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */  /* removed horizontal line */
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
@@ -1733,7 +1739,7 @@ responsive
   position: absolute;
   top: 110%;
   left: 0;
-  background: #007bff; /* Changed to blue */
+  background: #ff003c; /* Changed to blue */
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   overflow: hidden;
@@ -1767,3 +1773,84 @@ responsive
   opacity: 1;
   transform: translateY(0);
 }
+.dropdown {
+  position: relative;
+}
+/*------------------*/
+/* ===========================
+   DROPDOWN BASE
+=========================== */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #007bff; /* Light green background */
+  min-width: 230px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  list-style: none;
+
+  display: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+/* Dropdown menu text */
+.dropdown-menu a {
+  color: #007bff; 
+  padding: 12px 20px;
+  display: block;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+  background: #007bff;
+  color: #023020;
+}
+
+/* ===========================
+   DESKTOP HOVER
+=========================== */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   MOBILE CLICK SUPPORT
+=========================== */
+.dropdown.open .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.logo {
+  display: flex;
+  align-items: center;  /* vertically centers image and text */
+  gap: 10px;            /* space between image and text */
+  text-decoration: none; /* optional: remove underline */
+}
+
+.logo-img {
+  height: 50px;   /* adjust as needed */
+  width: auto;    /* maintain aspect ratio */
+}
+
+.logo h4 {
+  margin: 0;       /* remove default h4 margin */
+  font-size: 24px; /* adjust as needed */
+  color: #000;     /* text color */
+}
+
