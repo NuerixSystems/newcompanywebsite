@@ -55,7 +55,7 @@ https://templatemo.com/tm-563-seo-dream
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-  <img src="assets/images/copy-logo.jpeg" alt="NuerixSystems" class="logo-img">
+  <img src="assets/images/Nuerix Logo.png" alt="NuerixSystems" class="logo-img">
   <h4>NuerixSystems</h4>
 </a>
 
@@ -77,6 +77,34 @@ https://templatemo.com/tm-563-seo-dream
     <li><a href="">  </a></li>
   </ul>
 </li>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(dropdown => {
+    const btn = dropdown.querySelector(".dropbtn");
+
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove("open");
+      });
+
+      // Toggle this one
+      dropdown.classList.toggle("open");
+    });
+  });
+
+  // Close dropdown if click outside
+  document.addEventListener("click", () => {
+    dropdowns.forEach(d => d.classList.remove("open"));
+  });
+});
+</script>
+
               <!--<li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>-->
               <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
               <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> 
@@ -96,140 +124,160 @@ https://templatemo.com/tm-563-seo-dream
    <!-- Banner -->
   <!-- ***** Hero Section (Updated Background & Style) ***** -->
 <!-- ***** Hero Section (Updated Background & Style) ***** -->
-<div class="main-banner inner-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s" style="background: linear-gradient(135deg, #007bff, #0056b3); color: #fff; padding: 120px 0;">
+<div class="main-banner inner-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
   <div class="container text-center">
-    <h2 class="display-5 fw-bold">Strategic Branding That Builds Business Value</h2>
-    <p class="lead">Where strategy meets storytelling — and design meets business growth.</p>
-    <!--<a href="contact.html" class="btn btn-light mt-3 px-4 py-2 fw-semibold">Let’s Build Your Brand</a>-->
+    <h2 class="display-5 fw-bold">CRM Development Services</h2>
+    <p class="lead">Building smart, scalable CRM systems to automate sales, manage leads, and help businesses grow faster.</p>
   </div>
 </div>
 
 <!-- ***** Introduction ***** -->
 <section class="content-section py-5">
   <div class="container text-center">
-    <h3 class="mb-3">Branding That Drives Trust, Perception & Profit</h3>
+    <h3 class="mb-3">Empowering Businesses with Smart CRM Solutions</h3>
     <p>
-      At <strong>Nuerix Digital</strong>, we believe a brand is more than a logo — it’s the entire experience customers associate with your business.
-      We help startups and enterprises alike discover their unique voice, craft a strategic identity, and position their brand for measurable market success.
+      <strong>NuerixSystems</strong> specializes in building advanced CRM platforms for startups and growing businesses.
+      We deliver custom CRM systems that automate workflows, boost sales productivity,
+      and provide actionable insights through data-driven dashboards.
     </p>
-    <p>
-      Through deep research, creative precision, and consistent execution, we ensure your brand not only looks exceptional — it <em>performs</em> exceptionally.
-    </p>
-  </div>
-</section>
-
-<!-- ***** Services ***** -->
-<section class="content-section bg-light py-5">
-  <div class="container text-center">
-    <h3 class="mb-4">Our Brand Strategy & Identity Services</h3>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="feature p-4 border rounded h-100">
-          <h4>Brand Discovery & Positioning</h4>
-          <p>We identify your competitive edge, market opportunity, and brand essence through research and strategy workshops.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature p-4 border rounded h-100">
-          <h4>Visual & Verbal Identity</h4>
-          <p>We design logos, color systems, tone of voice, and imagery that connect emotionally with your audience.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature p-4 border rounded h-100">
-          <h4>Brand Architecture</h4>
-          <p>We define relationships between your sub-brands, products, and services for clarity and scalability.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature p-4 border rounded h-100">
-          <h4>Brand Guidelines</h4>
-          <p>A complete system ensuring consistency across digital, print, and physical environments.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature p-4 border rounded h-100">
-          <h4>Launch & Brand Activation</h4>
-          <p>We plan and execute rollouts that introduce or refresh your brand with maximum visibility.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature p-4 border rounded h-100">
-          <h4>Brand Audit & Evolution</h4>
-          <p>We assess performance, perception, and evolve your strategy as markets change.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ***** Process ***** -->
-<section class="content-section py-5">
-  <div class="container text-center">
-    <h3 class="mb-3">Our Proven 4-Step Branding Process</h3>
-    <div class="row g-4">
-      <div class="col-md-3">
-        <div class="service-card p-4 border rounded h-100">
-          <h4>1. Discover</h4>
-          <p>We understand your business goals, audience, and market through workshops and research.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="service-card p-4 border rounded h-100">
-          <h4>2. Define</h4>
-          <p>We translate insights into positioning, architecture, and a brand narrative foundation.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="service-card p-4 border rounded h-100">
-          <h4>3. Design</h4>
-          <p>We develop your visual and verbal identity — where design aesthetics meet strategy.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="service-card p-4 border rounded h-100">
-          <h4>4. Deploy</h4>
-          <p>We activate your brand across every touchpoint, ensuring clarity and impact.</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
 <!-- ***** Why Choose Us ***** -->
-<section class="content-section py-5 bg-light">
+<section class="content-section bg-light py-5">
   <div class="container text-center">
-    <h3 class="mb-4">Why Businesses Choose NeoVision Digital</h3>
+    <h3 class="mb-3">Why Choose Our CRM Development?</h3>
+    <p class="mb-5">
+      We create CRM solutions that help businesses manage leads, track sales, automate communication,
+      and deliver a seamless customer experience.
+    </p>
+
     <div class="row g-4">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="feature p-4 border rounded h-100">
-          <h4>Strategic Expertise</h4>
-          <p>We blend creative design with market intelligence to build brands that perform — not just impress.</p>
+          <h4>Custom CRM Solutions</h4>
+          <p>Fully tailored CRM platforms designed to match your business process and workflows.</p>
         </div>
       </div>
-      <div class="col-md-3">
+
+      <div class="col-md-4">
         <div class="feature p-4 border rounded h-100">
-          <h4>Proven ROI Impact</h4>
-          <p>Our brand transformations result in measurable growth, engagement, and higher valuations.</p>
+          <h4>Lead & Pipeline Management</h4>
+          <p>Track leads, follow-ups, and sales pipelines with real-time insights and automation.</p>
         </div>
       </div>
-      <div class="col-md-3">
+
+      <div class="col-md-4">
         <div class="feature p-4 border rounded h-100">
-          <h4>Industry Experience</h4>
-          <p>From startups to luxury brands, our work scales with your ambitions.</p>
+          <h4>Automation & Integrations</h4>
+          <p>Automate emails, tasks, reminders, and integrate CRM with WhatsApp, email, or APIs.</p>
         </div>
       </div>
-      <div class="col-md-3">
+
+      <div class="col-md-4">
         <div class="feature p-4 border rounded h-100">
-          <h4>End-to-End Partnership</h4>
-          <p>We’re your long-term brand ally — from strategy to continuous evolution.</p>
+          <h4>Analytics & Dashboards</h4>
+          <p>Real-time dashboards to monitor sales performance, follow-ups, and customer behavior.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature p-4 border rounded h-100">
+          <h4>Workflow Automation</h4>
+          <p>Reduce manual tasks using automated reminders, follow-up triggers, and deal updates.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature p-4 border rounded h-100">
+          <h4>Secure & Scalable</h4>
+          <p>Highly secure, scalable CRM architecture suitable for startups and SMBs.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<div id="features" class="features section">
+<!-- ***** Our Process ***** -->
+<section class="content-section py-5">
+  <div class="container text-center">
+    <h3 class="mb-3">Our CRM Development Process</h3>
+    <p class="mb-5">A systematic, agile process that ensures the CRM matches your business goals perfectly.</p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card p-4 border rounded h-100">
+          <h4>1. Requirement Analysis</h4>
+          <p>Understanding your customer journey, sales workflow, and automation needs.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card p-4 border rounded h-100">
+          <h4>2. UI/UX Design</h4>
+          <p>We design simple, intuitive dashboards and workflows for your sales team.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card p-4 border rounded h-100">
+          <h4>3. Development</h4>
+          <p>Building the CRM using modern frameworks like React, FastAPI, Python, and MySQL.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card p-4 border rounded h-100">
+          <h4>4. Integrations</h4>
+          <p>Connecting CRM with email, WhatsApp, Google, payment systems, or third-party APIs.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card p-4 border rounded h-100">
+          <h4>5. Testing & QA</h4>
+          <p>Ensuring reliability, security, and smooth performance across all devices.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card p-4 border rounded h-100">
+          <h4>6. Deployment & Support</h4>
+          <p>Launching the system and providing continuous updates, enhancements, and support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ***** Impact Section ***** -->
+<section class="content-section bg-light py-5">
+  <div class="container text-center">
+    <h3 class="mb-3">How Our CRM Solutions Help Your Business</h3>
+    <p class="mb-4">
+      The CRM systems we build empower your team with automation, clarity, and efficiency.
+    </p>
+
+    <ul class="list-unstyled mx-auto" style="max-width: 600px; text-align: left;">
+      <li>✔ Centralized lead & customer data</li>
+      <li>✔ Automated follow-ups and reminders</li>
+      <li>✔ Sales pipeline visibility with stages</li>
+      <li>✔ Faster lead conversions</li>
+      <li>✔ Better team collaboration</li>
+      <li>✔ Customer behavior insights & analytics</li>
+      <li>✔ Seamless integrations with tools you already use</li>
+    </ul>
+  </div>
+  <div class="col-lg-12 mt-5 text-center">
+  <a href="crmdevelopment.html" class="btn btn-primary" 
+     style="padding: 12px 28px; font-size: 18px; font-weight: 600;
+            border-radius: 8px; background: #4e9cff; border: none;">
+    ⬅ Go Back Home
+  </a>
+</div>
+</section>
+
+  <div id="features" class="features section">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -354,12 +402,20 @@ https://templatemo.com/tm-563-seo-dream
           </div>
         </div>
       </div>
+      <div class="col-lg-12 mt-5 text-center">
+  <a href="crmdevelopment.html" class="btn btn-primary" 
+     style="padding: 12px 28px; font-size: 18px; font-weight: 600;
+            border-radius: 8px; background: #4e9cff; border: none;">
+    ⬅ Go Back Home
+  </a>
+</div>
 
     </div>
   </div>
 </div>
 
-  <div id="about" class="about-us section">
+
+ <div id="about" class="about-us section">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -403,12 +459,18 @@ https://templatemo.com/tm-563-seo-dream
           <a href="https://crm.nuerix.in">Explore Our Services</a>
         </div>
       </div>
+      <div class="col-lg-12 mt-5 text-center">
+  <a href="crmdevelopment.html" class="btn btn-primary" 
+     style="padding: 12px 28px; font-size: 18px; font-weight: 600;
+            border-radius: 8px; background: #4e9cff; border: none;">
+    ⬅ Go Back Home
+  </a>
+</div>
     </div>
   </div>
 </div>
 
   
-
   <div id="contact" class="contact-us section">
     <div class="container">
       <div class="row">
@@ -455,6 +517,13 @@ https://templatemo.com/tm-563-seo-dream
                     </fieldset>
                   </div>
                 </div>
+                <div class="col-lg-12 mt-5 text-center">
+  <a href="crmdevelopment.html" class="btn btn-primary" 
+     style="padding: 12px 28px; font-size: 18px; font-weight: 600;
+            border-radius: 8px; background: #4e9cff; border: none;">
+    ⬅ Go Back Home
+  </a>
+</div>
               </div>
 
               <div class="col-lg-3">
@@ -501,7 +570,6 @@ https://templatemo.com/tm-563-seo-dream
       </div>
     </div>
 </footer>
-
 
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
