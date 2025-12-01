@@ -55,7 +55,7 @@ https://templatemo.com/tm-563-seo-dream
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-  <img src="assets/images/copy-logo.jpeg" alt="NuerixSystems" class="logo-img">
+  <img src="assets/images/Nuerix Logo.png" alt="NuerixSystems" class="logo-img">
   <h4>NuerixSystems</h4>
 </a>
 
@@ -77,6 +77,34 @@ https://templatemo.com/tm-563-seo-dream
     <li><a href="">  </a></li>
   </ul>
 </li>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(dropdown => {
+    const btn = dropdown.querySelector(".dropbtn");
+
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove("open");
+      });
+
+      // Toggle this one
+      dropdown.classList.toggle("open");
+    });
+  });
+
+  // Close dropdown if click outside
+  document.addEventListener("click", () => {
+    dropdowns.forEach(d => d.classList.remove("open"));
+  });
+});
+</script>
+
               <!--<li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>-->
               <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
               <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> 
