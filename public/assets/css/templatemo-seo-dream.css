@@ -1844,7 +1844,7 @@ responsive
 }
 
 .logo-img {
-  height: 50px;   /* adjust as needed */
+  height: 80px;   /* adjust as needed */
   width: auto;    /* maintain aspect ratio */
 }
 
@@ -1854,3 +1854,50 @@ responsive
   color: #000;     /* text color */
 }
 
+
+/* Hide dropdown by default 
+.dropdown-menu {
+  display: green;
+  position: absolute;
+  background: black;
+  padding: 10px 0;
+  list-style: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ Show when .open is added 
+.dropdown.open .dropdown-menu {
+  display: block;
+}*/
+
+/* Mobile-friendly fix: position static */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+  }
+}
+
+.section {
+    padding: 80px 0;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/*Test*/
+
+/* Mobile dropdown fix */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    display: none;       /* hide by default */
+    width: 100%;
+    background: #fff;
+    position: static;
+  }
+  .dropdown.open .dropdown-menu {
+    display: block;      /* show when parent has 'open' */
+  }
+}
