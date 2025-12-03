@@ -2030,7 +2030,7 @@ responsive
 
 
           <li><a href="career.html" class="active">Careers</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
 
           <li>
             <div class="main-blue-button"><a href="index.html#contact">Get Quote</a></div>
@@ -2062,7 +2062,7 @@ responsive
         </div>
 
         <div class="col-lg-6">
-          <img src="assets/images/career-banner.png" class="img-fluid">
+          <img src="assets/images/assets/images/career-banner.png" class="img-fluid">
         </div>
 
       </div>
@@ -2074,11 +2074,12 @@ responsive
     <div class="container">
 
       <div class="text-center mb-5">
-        <h6>Open Role</h6>
-        <h2>Digital Marketing Specialist</h2>
+        <h6>Open Roles</h6>
+        <h2>Join Our Team</h2>
       </div>
 
-      <div class="row justify-content-center">
+      <!-- DIGITAL MARKETING SPECIALIST -->
+      <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
 
           <div class="job-card">
@@ -2091,27 +2092,72 @@ responsive
               analytics, creatives, AI tools and performance marketing.
             </p>
 
-            <div class="expand-btn" onclick="toggleDesc()">📄 View Full Job Description</div>
+            <div class="expand-btn" onclick="toggleDesc1()">📄 View Full Job Description</div>
 
-            <div id="fullDesc" class="expand-box">
+            <div id="fullDesc1" class="expand-box">
               <h5><strong>Job Summary</strong></h5>
-              <p>Plan, execute, and optimize marketing campaigns across all digital channels with strong analytical and creative skills.</p>
+              <p>Plan, execute, and optimize marketing campaigns across digital channels.</p>
 
               <h5><strong>Key Responsibilities:</strong></h5>
               <ul>
-                <li>Promote mobile & web applications through paid + organic channels.</li>
+                <li>Promote mobile & web apps through paid + organic channels.</li>
                 <li>Manage ASO, SEO, SMM, SMO, retargeting, CRM campaigns.</li>
                 <li>Run ads on Google, Meta, LinkedIn, YouTube.</li>
                 <li>Analyze Google Analytics, Firebase, SEMrush, Ahrefs.</li>
                 <li>Create creatives using Canva, Photoshop, Figma.</li>
-                <li>Use AI tools for campaign optimization.</li>
+                <li>Use AI tools for automation & optimization.</li>
               </ul>
 
               <h5><strong>Requirements:</strong></h5>
               <ul>
                 <li>1–3 years digital marketing experience.</li>
-                <li>Strong SEO / SEM / Ads skills.</li>
-                <li>Strong communication & design skills.</li>
+                <li>Strong SEO / SEM experience.</li>
+                <li>Good communication & creative skills.</li>
+              </ul>
+            </div>
+
+            <a href="#apply" class="btn btn-primary mt-3">Apply Now</a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BUSINESS DEVELOPMENT EXECUTIVE -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="job-card">
+            <h4>Business Development Executive</h4>
+
+            <p class="mt-2"><strong>Experience:</strong> 0–3 Years</p>
+
+            <p>
+              We are looking for a proactive Business Development Executive to help grow our software
+              development, CRM, and AI services through lead generation and client acquisition.
+            </p>
+
+            <div class="expand-btn" onclick="toggleDesc2()">📄 View Full Job Description</div>
+
+            <div id="fullDesc2" class="expand-box">
+              <h5><strong>Job Summary</strong></h5>
+              <p>Identify new business opportunities, pitch services, and build long-term client relationships.</p>
+
+              <h5><strong>Key Responsibilities:</strong></h5>
+              <ul>
+                <li>Generate leads through social media, email, calls, and networking.</li>
+                <li>Pitch software development, CRM, AI, and digital marketing services.</li>
+                <li>Prepare proposals and presentations.</li>
+                <li>Follow up with potential clients to close deals.</li>
+                <li>Work closely with marketing & technical teams.</li>
+              </ul>
+
+              <h5><strong>Requirements:</strong></h5>
+              <ul>
+                <li>0–3 years of experience.</li>
+                <li>Excellent communication and negotiation skills.</li>
+                <li>Basic understanding of software / IT industry.</li>
+                <li>Self-motivated & target-driven.</li>
               </ul>
             </div>
 
@@ -2136,44 +2182,41 @@ responsive
 
       <div class="col-lg-8 mx-auto apply-card">
 
-        <form>
+        <form action="http://127.0.0.1:8000/apply" method="POST" enctype="multipart/form-data">
 
           <div class="row">
 
             <div class="col-lg-6 mb-3">
-              <input type="text" class="form-control" placeholder="Full Name" required>
+              <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
             </div>
 
             <div class="col-lg-6 mb-3">
-              <input type="email" class="form-control" placeholder="Email" required>
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
             </div>
 
             <div class="col-lg-6 mb-3">
-              <input type="text" class="form-control" placeholder="Phone Number" required>
+              <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
             </div>
 
             <div class="col-lg-6 mb-3">
-              <select class="form-control" required>
+              <select name="position" class="form-control" required>
                 <option value="">Select Position</option>
                 <option>Digital Marketing Specialist</option>
+                <option>Business Development Executive</option>
               </select>
             </div>
 
             <div class="col-lg-12 mb-3">
-              <textarea class="form-control" placeholder="Tell us something about yourself…" rows="4"></textarea>
+              <textarea name="about" class="form-control" placeholder="Tell us something about yourself…" rows="4"></textarea>
             </div>
 
             <div class="col-lg-12 mb-3">
               <label>Upload Resume (PDF or DOC)</label>
-              <input type="file" class="form-control" required>
+              <input type="file" name="resume" class="form-control" required>
             </div>
 
             <div class="col-lg-12 text-center">
-              <button class="btn btn-primary btn-lg">Submit Application</button>
-            </div>
-
-            <div class="col-lg-12 text-center mt-3">
-              <a href="career.html" class="btn btn-outline-primary btn-lg">Go Back</a>
+              <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
             </div>
 
           </div>
@@ -2185,15 +2228,18 @@ responsive
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="text-center">
     © 2025 NuerixSystems — All Rights Reserved.
   </footer>
 
   <!-- Expand Job Description JS -->
   <script>
-    function toggleDesc() {
-      const box = document.getElementById("fullDesc");
+    function toggleDesc1() {
+      const box = document.getElementById("fullDesc1");
+      box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+    function toggleDesc2() {
+      const box = document.getElementById("fullDesc2");
       box.style.display = (box.style.display === "block") ? "none" : "block";
     }
   </script>
@@ -2206,7 +2252,6 @@ responsive
       nav.style.display = nav.style.display === "block" ? "none" : "block";
     });
 
-    // Dropdown toggle for mobile
     document.querySelector('.dropdown .dropbtn').addEventListener('click', function () {
       this.parentElement.classList.toggle('open');
     });
