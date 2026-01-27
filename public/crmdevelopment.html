@@ -34,92 +34,16 @@ https://templatemo.com/tm-563-seo-dream
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+ <div id="header-placeholder"></div>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-  <img src="assets/images/Nuerix Logo.png" alt="NuerixSystems" class="logo-img">
-  <h4>NuerixSystems</h4>
-</a>
-
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#features">Features</a></li>
-              <li class="scroll-to-section"><a href="#about">About Us</a></li>
-             <li class="dropdown">
-  <a href="javascript:void(0)" class="dropbtn">Services <span class="arrow">▾</span></a>
-
-  <ul class="dropdown-menu">
-    <li><a href="custom.html">Custom Software</a></li>
-    <li><a href="web-development.html">WebsiteDevelopment</a></li>
-    <li><a href="aidigitalmarketing.html">AIdrivenDigitalMarketing</a></li>
-    <li><a href="crmdevelopment.html">CRMDevelopment </a></li>
-    <li><a href="microsaas.html">MicroSaas  </a></li>
-    <li><a href="">  </a></li>
-  </ul>
-</li>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const dropdowns = document.querySelectorAll(".dropdown");
-
-  dropdowns.forEach(dropdown => {
-    const btn = dropdown.querySelector(".dropbtn");
-
-    btn.addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-
-      // Close other open dropdowns
-      dropdowns.forEach(d => {
-        if (d !== dropdown) d.classList.remove("open");
-      });
-
-      // Toggle this one
-      dropdown.classList.toggle("open");
-    });
-  });
-
-  // Close dropdown if click outside
-  document.addEventListener("click", () => {
-    dropdowns.forEach(d => d.classList.remove("open"));
-  });
-});
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header-placeholder").innerHTML = data;
+  })
+  .catch(err => console.error("Header load error:", err));
 </script>
-
-              <!--<li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>-->
-              <li class="scroll-to-section"><a href="career.html">Careers</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
-              <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> 
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
 
   
    <!-- Banner -->
@@ -540,13 +464,13 @@ document.addEventListener("DOMContentLoaded", () => {
                       <div class="icon">
                         <img src="assets/images/contact-icon-02.png" alt="phone">
                       </div>
-                      <a href="#">+91-00000-00000</a>
+                      <a href="#">+91-83093-48523</a>
                     </li>
                     <li>
                       <div class="icon">
                         <img src="assets/images/contact-icon-03.png" alt="location">
                       </div>
-                      <a href="#">Ram Nagar, 10th Street, Madipakkam, Chennai</a>
+                      <a href="#">1052, 10th Main road, Ram Nagar South,Madippakam,Chennai, TamilNadu</a>
                     </li>
                   </ul>
                 </div>
@@ -564,7 +488,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="row">
         <div class="col-lg-12">
           <p>
-            © 2025 Nuerix Systems. All Rights Reserved.<br>
+            © 2026 Nuerix Systems. All Rights Reserved.<br>
             Designed and Developed by Nuerix Systems
           </p>
         </div>
